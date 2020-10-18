@@ -12,16 +12,25 @@ function getWeather(city) {
       var weather = document.getElementById("weather");
       var temp = JSON.parse(this.response);
       console.log(temp);
-
-      weather.innerHTML = temp.current.temperature;
-      if (temp.error.code == 615) {
+      try {
+          weather.innerHTML = temp.current.temperature;
+          
+      } catch (error) {
+          
+      }
+     try {if (temp.error.type == "request_failed") {
         weather.innerHTML = "Non Existant";
       }
+         
+     } catch (error) {
+         
+     }
+      
     }
   };
   xhttp.open(
     "GET",
-    `//api.weatherstack.com/current?access_key=03a74986671c5f411100cfd9cc98b6d9&query=${city}`,
+    `http://api.weatherstack.com/current?access_key=03a74986671c5f411100cfd9cc98b6d9&query=${city}`,
     true
   );
   xhttp.send();
