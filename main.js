@@ -21,7 +21,7 @@ function getWeather(city) {
   };
   xhttp.open(
     "GET",
-    `http://api.weatherstack.com/current?access_key=03a74986671c5f411100cfd9cc98b6d9&query=${city}`,
+    `//api.weatherstack.com/current?access_key=03a74986671c5f411100cfd9cc98b6d9&query=${city}`,
     true
   );
   xhttp.send();
