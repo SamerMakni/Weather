@@ -8,8 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <!-- Bootstrap CSS -->
+<!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -21,27 +20,29 @@
     <main class="containter">
       <div class="col-4 mx-auto text-align-center">
         <h3>Give me your city!</h3>
-        <div class="form-group">
-          <label for=""></label>
-          <input
-            type="text"
-            class="form-control"
-            name="city"
-            id="city"
-            aria-describedby="helpId"
-            placeholder=""
-          />
-          <small id="helpId" class="form-text text-muted"></small>
-          <button
-            type="button"
-            name="result"
-            id="result"
-            class="btn btn-primary btn-lg btn-block"
-          >
-            Give
-          </button>
-        </div>
-        <p>Your city weather is : <span id="weather"></span></p>
+        <form action="">
+          <div class="form-group">
+            <label for=""></label>
+            <input
+              type="text"
+              class="form-control"
+              name="city"
+              id="city"
+              aria-describedby="helpId"
+              placeholder=""
+            />
+            <small id="helpId" class="form-text text-muted"></small>
+            <button
+              type="submit"
+              name="result"
+              id="result"
+              class="btn btn-primary btn-lg btn-block"
+            >
+              Give
+            </button>
+          </div>
+        </form>
+          <p>Your city weather is : <span id="weather"></span></p>
       </div>
     </main>
 
